@@ -18,7 +18,6 @@ public class GoogleStepDefs {
 
     @Then("I verify page is opened")
     public void iVerifyPageIsOpened() {
-        new WebDriverWait(getDriver(), Duration.ofSeconds(5))
-                .until(ExpectedConditions.visibilityOfElementLocated(By.name("q")));
+        new WebDriverWait(getDriver(), Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(By.name("q")));
     }
 }
